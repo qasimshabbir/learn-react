@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import CounterContext from "../context/CounterContext.js";
+import Button from '@material-ui/core/Button';
 
 function Child() {
     const value = useContext(CounterContext);
@@ -7,7 +8,7 @@ function Child() {
     return (
       <div>
          The value is {value[0]}
-            <button onClick = {()=>{value[1](value[0]++)}}>Increment</button>
+            <Button onClick = {()=>{value[1](value[0]++)}}>Increment</Button>
        </div>
       
     );
