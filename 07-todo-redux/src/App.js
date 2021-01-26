@@ -1,4 +1,3 @@
-import './App.css';
 import { AddTodo } from './component/AddTodo';
 import { FooterAction } from './component/FooterAction';
 import { ListTodo } from './component/ListTodo';
